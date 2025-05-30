@@ -9,6 +9,28 @@ class Calculator {
 
     }
 
+    /*
+     * BETTER WAY 
+     * 
+     * private void opDone(double result) {
+     *    this.nOpDone++;
+     *    this.lastRes = result;
+     *}
+     *
+     *public addBest(double v1, double v2) {
+     *    this.opDone(v1+v2);
+     *    return v1+v2;
+     *}
+     *
+     *public subBest(double v1, double v2) {
+     *    this.opDone(v1-v2);
+     *    return v1-v2;
+     *}
+     * 
+     */
+    
+
+
     double add(double v1, double v2) {
         this.nOpDone++;
         this.lastRes = v1 + v2;
