@@ -9,10 +9,28 @@ Obiettivo: comprende come funziona `javac`, i cui file sorgenti (.java) forniti 
     - NOTA: È possibile passare più file a `javac` semplicemente elencandoli
 3. Si esegua `UseCalculator`
 
+javac -d bin .\src\UserCalculator.java ..\03-calculator\Calculator.java
+
 ## Esercizio avanzato
 
 - Spostare il file `Calculator.class` dalla cartella `bin`  ad una cartella `lib` in una posizione a piacere all'interno del sistema **FUORI** dalla cartella dell'esercizio.
     - Così facendo possiamo simulare il fatto che la classe `Calculator` sia una libreria offerta da terzi.
-- Cancellare dunque tutti i file residui che si trovano nella cartella `bin` e il sorgente `Calculator.java` dalla cartella `src`.
+ - Cancellare dunque tutti i file residui che si trovano nella cartella `bin` e il sorgente `Calculator.java` dalla cartella `src`.
 
 Obiettivo: Lanciare un singolo comando `javac`, utilizzando la libreria che offre la classe `Calculator`, per compilare. Eseguendo la classe `UseCalculator` l'output finale dovrebbe coincidere con quello ottenuto al passo precedente.
+
+javac -d 05-multifilecompilation\bin -cp lib   .\05-multifilecompilation\src\*.java
+
+dir output
+C:.
+├───00-hello-world
+├───01-scopes
+├───02-fill-class-student
+├───03-calculator
+├───04-train
+├───05-multifilecompilation
+│   ├───bin
+│   └───src
+│       └───UseCalculator.java
+└───lib
+├─  └───Calculator.class

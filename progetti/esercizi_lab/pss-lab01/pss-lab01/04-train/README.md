@@ -1,14 +1,18 @@
 # Train: implementazione di una classe con campi correlati
 
 1. Implementare una classe Java che modelli il concetto di treno, con le seguenti caratteristiche:
+
   * Campi:
     - `int nTotSeats` (Numero dei posti totali del treno)
     - `int nFirstClassSeats` (Numero dei posti in prima classe)
     - `int nSecondClassSeats` (Numero dei posti in seconda classe)
     - `int nFirstClassReservedSeats` (Numero dei posti in prima classe già prenotati)
     - `int nSecondClassReservedSeats` (Numero dei posti in seconda classe già prenotati)
+    > copiare ed incollare
+
   * Metodi:
     - `void build(???)` (inizializzare opportunamente i campi. Si valuti quale sia un set di argomenti di input corretto e più piccolo possibile per il metodo suddetto)
+    > inserisco perlomeno i campi della classe da indicizzare subito
     - `void reserveFirstClassSeats(int)` (consente di riservare dei posti in prima classe)
     - `void reserveSecondClassSeats(int)` (consente di riservare dei posti in seconda classe)
     - `double getTotOccupancyRatio()` (percentuale globale di posti occupati)
