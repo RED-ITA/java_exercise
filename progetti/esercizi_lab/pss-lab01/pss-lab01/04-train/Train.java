@@ -23,17 +23,27 @@ public class Train {
 
 
     // metodi
-    void reserveFirstClassSeats(int NumPosti) {
+    void reserveFirstClassSeats(int numPosti) {
         //consente di riservare dei posti in prima classe
-        if(this.NumPosti <= (this.nFirstClassSeats - this.nFirstClassReservedSeats)) {
-            this.nFirstClassReservedSeats += this.NumPosti;
+        if(numPosti <= (this.nFirstClassSeats - this.nFirstClassReservedSeats)) {
+            this.nFirstClassReservedSeats += numPosti;
+            System.out.println("La prenotazione è andata a buon fine.");
+        }
+        else {
+            System.out.print("Impossibile prenotare, seleziona massimo ");
+            System.out.println((this.nFirstClassSeats-this.nFirstClassReservedSeats) + " posti");
         }
     }
 
-    void reserveSecondClassSeats(int QUALCOSA) {
+    void reserveSecondClassSeats(int numPosti) {
         //consente di riservare dei posti in seconda classe
-        if(this.NumPosti <= (this.nSecondClassSeats - this.nSecondClassReservedSeats)) {
-            this.nSecondClassReservedSeats += this.NumPosti;
+        if(numPosti <= (this.nSecondClassSeats - this.nSecondClassReservedSeats)) {
+            this.nSecondClassReservedSeats += numPosti;
+            System.out.println("La prenotazione è andata a buon fine.");
+        }
+        else {
+            System.out.print("Impossibile prenotare, seleziona massimo ");
+            System.out.println((this.nSecondClassSeats-this.nSecondClassReservedSeats) + " posti");
         }
     }
 
@@ -41,19 +51,19 @@ public class Train {
         int totOccupancy;
         double percentuale;
         totOccupancy = this.nFirstClassReservedSeats + this.nSecondClassReservedSeats;
-        percentuale = (double)((totOccupancy * 100 )/ this.nTotSeats);
+        percentuale = (double) totOccupancy * 100.0f  / this.nTotSeats;
         return percentuale;
     }
 
     double getFirstClassOccupancyRatio() {
         double percentuale;
-        percentuale = (double)((this.nFirstClassReservedSeats * 100 )/ this.nTotSeats);
+        percentuale = (double) this.nFirstClassReservedSeats * 100.0f  / this.nFirstClassSeats;
         return percentuale;
     }
 
     double getSecondClassOccupancyRatio() {
         double percentuale;
-        percentuale = (double)((this.nSecondClassReservedSeats * 100 )/ this.nTotSeats);
+        percentuale = (double) this.nSecondClassReservedSeats * 100.0f / this.nSecondClassSeats;
         return percentuale;
     }
 

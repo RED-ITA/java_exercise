@@ -1,5 +1,52 @@
 class UseTrain {
     public static void main(String[] args) {
+
+        // PER 05/06/2025 finire questo esesrczio
+
+        //DIO CANE TI MENO SE NON LO FAI
+
+        //PRENDITI 4 ore per farlo 
+
+        //ripeto ti meno se non lo fai 
+
+        Train train1 = new Train();
+        train1.build(10, 40);
+
+        train1.reserveFirstClassSeats(2);
+        train1.reserveSecondClassSeats(3);
+
+        System.out.print("Percentiuale posti occupati totale: ");
+        System.out.println(train1.getTotOccupancyRatio() + "%\n");
+        System.out.print("Percentiuale posti occupati prima classe: ");
+        System.out.println(train1.getFirstClassOccupancyRatio() + "%\n");
+        System.out.print("Percentiuale posti occupati seconda classe: ");
+        System.out.println(train1.getSecondClassOccupancyRatio() + "%\n");
+
+
+        train1.deleteAllReservations();
+
+        train1.reserveFirstClassSeats(6);
+        train1.reserveSecondClassSeats(13);
+        train1.reserveFirstClassSeats(6);
+        train1.reserveSecondClassSeats(13);
+        train1.reserveFirstClassSeats(6);
+        train1.reserveSecondClassSeats(13);
+        train1.reserveFirstClassSeats(6);
+        train1.reserveSecondClassSeats(13);
+        train1.reserveFirstClassSeats(6);
+        train1.reserveSecondClassSeats(13);
+        train1.reserveFirstClassSeats(4);
+        train1.reserveSecondClassSeats(1);
+
+
+
+        System.out.print("Percentiuale posti occupati totale: ");
+        System.out.println(train1.getTotOccupancyRatio() + "%\n");
+        System.out.print("Percentiuale posti occupati prima classe: ");
+        System.out.println(train1.getFirstClassOccupancyRatio() + "%\n");
+        System.out.print("Percentiuale posti occupati seconda classe: ");
+        System.out.println(train1.getSecondClassOccupancyRatio() + "%\n");
+
         /*
          * Premesse per un corretto testing della classe. Per ragioni di
          * coerenza e semplicità:
