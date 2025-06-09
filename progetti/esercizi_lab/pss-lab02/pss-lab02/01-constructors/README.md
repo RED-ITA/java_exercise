@@ -1,5 +1,6 @@
 # FASE 1 - Costruttori
 
+
 1. Si osservino e poi si rimuovano dalla classe `Student` il metodo `void main(String[])` ed il metodo `void build(...)`
     - Si noti come tra l'istanziazione di uno `Student` e la sua "costruzione" mediante `build` l'oggetto si trovi in uno stato semanticamente inconsistente
 2. Si implementi un costruttore a zero argomenti per `Train`
