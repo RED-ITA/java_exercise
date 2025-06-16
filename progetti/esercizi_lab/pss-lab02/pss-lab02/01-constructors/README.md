@@ -22,7 +22,7 @@
 
 1. Si completi la classe `Smartphone` con i seguenti costruttori:
     - `Smartphone(String brand, String model)`
-    - `Smartphone(String brand, String model, boolean hasGPS, boolean has3g)`
+    - `Smartphone(String brand, String model, boolean hasGPS, boolean has3G)`
     - `Smartphone(String brand, String model, int sdSize)`
     - `Smartphone(String brand, String model, boolean hasNFC)`
     - Costruttore con un argomento per campo (NB: ci si assicuri di usare `this` per richiamare i costruttori esistenti)

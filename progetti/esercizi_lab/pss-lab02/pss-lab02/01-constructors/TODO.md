@@ -1,4 +1,4 @@
 
 [x] Fase 1 
-[ ] Fase 2
-[ ] Fase 3
+[x] Fase 2
+[x] Fase 3
