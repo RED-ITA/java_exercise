@@ -1,5 +1,6 @@
 # FASE 1 - Costruttori
 
+
 1. Si osservino e poi si rimuovano dalla classe `Student` il metodo `void main(String[])` ed il metodo `void build(...)`
     - Si noti come tra l'istanziazione di uno `Student` e la sua "costruzione" mediante `build` l'oggetto si trovi in uno stato semanticamente inconsistente
 2. Si implementi un costruttore a zero argomenti per `Train`
@@ -21,7 +22,7 @@
 
 1. Si completi la classe `Smartphone` con i seguenti costruttori:
     - `Smartphone(String brand, String model)`
-    - `Smartphone(String brand, String model, boolean hasGPS, boolean has3g)`
+    - `Smartphone(String brand, String model, boolean hasGPS, boolean has3G)`
     - `Smartphone(String brand, String model, int sdSize)`
     - `Smartphone(String brand, String model, boolean hasNFC)`
     - Costruttore con un argomento per campo (NB: ci si assicuri di usare `this` per richiamare i costruttori esistenti)
