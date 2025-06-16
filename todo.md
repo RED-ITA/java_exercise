@@ -1,4 +1,5 @@
 # ESERCIZI
 
 [x] Esercizio 1 lab
-[ ] Esercizio 2 lab (in corso)
+[x] Esercizio 2 lab 
+[ ] Esercizio 3 lab
